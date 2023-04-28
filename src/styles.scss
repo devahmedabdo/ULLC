@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  ::selection {
+    @apply bg-white;
+  }
+  html {
+    scroll-behavior: smooth;
+    body {
+      @apply bg-gray;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      hr {
+        @apply border-white;
+      }
+    }
+  }
+}
+@layer utilities {
+  .container {
+    @apply max-w-[1200px] mx-auto px-2;
+  }
+}
+@layer components {
+  .btn {
+    @apply px-6 py-2 font-medium text-lg  text-white rounded-lg hover:shadow-xl duration-300;
+  }
+  .underline-img {
+    @apply relative inline-block;
+    img {
+      @apply absolute top-full   left-0 w-full;
+    }
+  }
+  .title {
+    @apply font-bold text-3xl md:text-7xl text-center py-20;
+  }
+}

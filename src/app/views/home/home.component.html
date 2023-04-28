@@ -1,0 +1,147 @@
+<div id="landing">
+  <div
+    class="md:px-20 h-full md:ml-[107px] w-full md:w-fit  flex flex-col text-center justify-center text-white gap-8 items-center absolute top-0 left-0 bg-black bg-opacity-50">
+    <swiper-container autoplay="true" speed="500" class="absolute w-full h-screen top-0 left-0 -z-10" loop="true">
+      <swiper-slide>
+        <img class="h-full w-full object-cover" src="assets/main/landing-1.png" alt="">
+      </swiper-slide>
+      <swiper-slide>
+        <img class="h-full w-full object-cover" src="assets/main/landing-2.png" alt="">
+      </swiper-slide>
+    </swiper-container>
+
+    <span class="font-semibold text-sm md:text-[22px] text-gray ">Création de contenu, publicité, conversion de
+      prospects...</span>
+    <h2 class="font-bold text-2xl md:text-7xl break-all">
+      Ça commence toujours avec un <span class="underline-img"><img src="assets/main/underline.svg" alt=""> BON</span>
+      Accompagnement.
+    </h2>
+    <span class="font-semibold text-lg md:text-3xl border-b-4 border-primary">Rejoindre l'aventure</span>
+    <a href="#ser" class="md:w-10 w-6">
+      <img src="assets/main/down-arrow.svg" alt="">
+    </a>
+
+
+  </div>
+</div>
+<div class="md:px-20 px-5  about-us p-20">
+  <div class="border md:p-12 p-2 py-8 relative">
+    <img class="absolute top-0 -translate-y-1/2 w-10 left-11" src="assets/main/vector.svg" alt="">
+    <h2 class="font-bold text-lg md:text-4xl text-center leading-6 md:leading-normal">
+      ATTEIGNEZ L'EXCELLENCE ET <span class="underline-img"> <img src="assets/main/underline2.svg" alt="">
+        SURPASSEZ</span>
+      VOTRE CONCURRENCE grâce à notre
+      expertise et notre engagement sans
+      faille pour vos projets.
+    </h2>
+    <button
+      class="bg-primary text-white text-xs md:text-lg p-4 font-semibold md:p-8 mx-auto rounded-full block w-fit mt-10">Rejoindre
+      l'aventure</button>
+  </div>
+</div>
+<div id="services" class="md:px-20 px-5 services p-20">
+  <h2 class="title">Voici ce que nous faisons :</h2>
+  <div class="flex flex-wrap gap-3 justify-center">
+    <div *ngFor="let service of services"
+      class="flex justify-between px-5 flex-col gap-5 w-1/4 min-w-[240px] pb-8 service-box bg-white p-1 pt-3 rounded-3xl ">
+      <div class="flex justify-center items-center p-8" style="--color: {{service.color}}">
+        <img class="w-3/5" src="{{service.img}}" alt="">
+      </div>
+      <h3 class="font-semibold text-2xl md:text-3xl ">{{service.title}}</h3>
+      <p class="text-sm ">{{service.des}}</p>
+      <button routerLink="/{{service.link}}"
+        class="mt-5 w-fit flex items-center gap-3 text-[22px] pb-3 border-b-2 border-primary">
+        <span>En savoir plus</span>
+        <img class="w-2 " src="assets/main/r-arrow.svg" alt="">
+      </button>
+    </div>
+  </div>
+</div>
+<div class="md:px-20 px-5 goals gap-5 p-20 flex flex-col md:flex-row items-center md:items-start">
+  <div class="md:w-1/2 text-lg text-center md:text-left md:text-2xl font-semibold relative">
+    <img class="  left-0  rotate-45 md:rotate-0 absolute top-full translate-y-10 w-28 md:left-1/2"
+      src="assets/main/br-arrow.svg" alt="">
+    <p>Le vrai marketing va au-delà du
+      copier-coller des mêmes stratégies
+      pour tous nos clients. Ce qui a
+      fonctionné pour un magasin peut
+      <span class="text-primary">NE PAS</span> fonctionner pour un autre
+    </p>
+    <p class="mt-10">c'est pourquoi nous adaptons
+      soigneusement notre approche
+      à ce que nous pensons qui vous
+      procurera les meilleurs résultats. </p>
+  </div>
+  <div class="md:w-1/2 w-full relative">
+    <swiper-container class="pb-10 goals-swiper w-full">
+      <swiper-slide *ngFor="let goal of goals" class="w-fit">
+        <div
+          class="bg-white h-96 border mx-auto w-64 rounded-3xl text-center py-4 px-7 flex flex-col items-center gap-4">
+          <img class="h-44" src="assets/goals/{{goal.img}}" alt="">
+          <span class="text-2xl md:text-3xl font-semibold">{{goal.name}}</span>
+          <p class="text-sm">{{goal.des}}</p>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+    <div class="swiper-scrollbar hidden md:block z-10">
+      <div class="scroll-drag bg-primary "></div>
+    </div>
+  </div>
+</div>
+<!-- <div class=" md:px-20 px-5">
+  <h2 class="title">
+    Quelques merveilleuses personnes que
+    nous sommes fiers d'appeler clients :
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="rounded-3xl overflow-hidden">
+      <iframe class="w-full" src="https://www.youtube.com/embed/eCWjX8Z9QrY" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+    <div class="rounded-3xl overflow-hidden">
+      <iframe class="w-full" src="https://www.youtube.com/embed/eCWjX8Z9QrY" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+    <div class="rounded-3xl overflow-hidden">
+      <iframe class="w-full" src="https://www.youtube.com/embed/eCWjX8Z9QrY" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+    <div class="rounded-3xl overflow-hidden">
+      <iframe class="w-full" src="https://www.youtube.com/embed/eCWjX8Z9QrY" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</div> -->
+<div class=" md:px-20 px-5 faqs">
+  <h2 class="title">
+    FAQ
+  </h2>
+  <div>
+    <div *ngFor="let ques of faqs;let i =index" (click)="ques.show ? ques.show = false:ques.show = true"
+      class="bg-white flex flex-col gap-5 p-5 rounded-3xl border">
+      <div class="flex justify-between gap-8">
+        <span class="font-bold text-3xl md:text-5xl text-primary block min-w-[80px] text-center">0{{i+1}}</span>
+        <span class="text-sm md:text-2xl">{{ques.question}}</span>
+      </div>
+      <div *ngIf="ques.show" class="flex justify-between gap-8">
+        <span class="font-bold text-3xl md:text-5xl text-primary block min-w-[80px] text-center">-</span>
+        <span class="text-sm md:text-2xl">{{ques.solution}}</span>
+      </div>
+    </div>
+    <form action="" class="w-full mt-6 rounded-3xl bg-white flex justify-between overflow-hidden border text-center">
+      <input class="focus:outline-0 w-full py-4 px-10 placeholder:text-center placeholder:text-black"
+        placeholder="N'hésite pas à nous poser plus de questions ici :)" type="text">
+      <button type="submit" class="bg-primary w-28 flex items-center justify-center">
+        <img class="rotate-90 invert w-8 " src="assets/main/arrowcircleup.svg" alt="">
+      </button>
+    </form>
+  </div>
+</div>

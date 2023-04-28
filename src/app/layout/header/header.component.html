@@ -1,0 +1,31 @@
+<header
+  class="fixed items-center bg-gray px-5 md:px-0 z-50 w-full md:w-fit md:bg-white md:h-screen flex md:flex-col justify-between left-0 top-0">
+  <div class="menu-icon w-8 h-8 flex flex-col duration-300 gap-2 items-end left-32 top-8 md:fixed z-20"
+    [ngClass]="{active:activeMenu}" (click)="reflectActiveMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <a href="" class="flex-grow md:flex-grow-0">
+    <img class="md:w-[108px] w-20" src="assets/main/logo.png" alt="">
+  </a>
+  <nav [ngClass]="{active:activeMenu}"
+    class="duration-300 text-3xl gap-10 z-10 ease-in flex flex-col bg-zinc-800   text-white fixed top-0 left-0 w-full max-w-4xl h-full pt-40 pl-10 md:pl-32 -translate-x-full">
+    <a routerLink="/">L’agence</a>
+    <a routerLink="/aboutus">À propos de nous</a>
+    <a href="#services">Sévices</a>
+    <div class="flex gap-5 mt-10">
+      <img class="w-11" src="assets/main/usa.svg" alt="">
+      <img class="w-11" src="assets/main/fr.svg" alt="">
+    </div>
+  </nav>
+
+  <div class="hidden md:block">
+    <span class="vertical rotate-180 block mx-auto text-xl pt-5">
+      Rejoindre l’aventure
+    </span>
+  </div>
+  <div class="md:hidden">
+    <a class="bg-primary py-1 px-4 font-semibold text-sm rounded-full text-white" href="">Quote</a>
+  </div>
+</header>

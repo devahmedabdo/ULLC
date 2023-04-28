@@ -1,0 +1,46 @@
+// @import "swiper/element/css/scrollbar";
+#landing {
+  min-height: 100vh;
+}
+.services {
+  background: left center / 380px url("../../../assets/main/bg-1.svg") no-repeat;
+  @media (min-width: 768px) {
+    background: 0px 120px / 380px url("../../../assets/main/bg-1.svg") no-repeat;
+  }
+  .service-box {
+    width: calc(25% - 10px);
+    > div {
+      background: var(--color);
+      border-radius: 300px 300px 100px 100px;
+    }
+  }
+}
+.about-us {
+  > div {
+    background: top center / contain url("../../../assets/main/aboutus-bg.svg")
+      no-repeat;
+  }
+}
+.goals {
+  --swiper-scrollbar-bg-color: #ff3b3b;
+  --swiper-scrollbar-size: 3px;
+  --swiper-scrollbar-drag-bg-color: #3badff;
+}
+::ng-deep {
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    > div {
+      height: 200%;
+      top: -2px;
+      position: relative;
+    }
+  }
+}
+.faqs {
+  background: right center / 380px url("../../../assets/main/bg-2.svg")
+    no-repeat;
+  @media (min-width: 768px) {
+    background: right center / 380px url("../../../assets/main/bg-2.svg")
+      no-repeat;
+  }
+}
