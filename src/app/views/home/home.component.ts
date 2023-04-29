@@ -1,11 +1,10 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import Swiper from 'swiper';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  encapsulation: ViewEncapsulation.Emulated,
 })
 export class HomeComponent implements OnInit {
   constructor() {}
@@ -112,7 +111,8 @@ export class HomeComponent implements OnInit {
       Maecenas eget condimentum velit, sit amet feugiat lectus.orquen`,
     },
   ];
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  ngAfterViewInit(): void {
     new Swiper('.goals-swiper', {
       slidesPerView: 1,
 
@@ -132,13 +132,8 @@ export class HomeComponent implements OnInit {
       // spaceBetween: 0,
       breakpoints: {
         1320: {
-          // scrollbar: {
-          //   el: '.swiper-scrollbar',
-          //   draggable: true,
-          // },
           slidesPerView: 2,
-          //scrollbar: true,
-          spaceBetween: undefined,
+          spaceBetween: 22,
         },
       },
 

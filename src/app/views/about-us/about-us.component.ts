@@ -1,15 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
   styleUrls: ['./about-us.component.scss'],
 })
-export class AboutUsComponent implements OnInit {
+export class AboutUsComponent implements OnInit, AfterViewInit {
   constructor() {}
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
+  ngAfterViewInit(): void {
+    new Swiper('.aboutUs', {
+      hashNavigation: {
+        watchState: true,
+      },
+      pagination: {
+        clickable: true,
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+      autoplay: true,
+    });
   }
+  ngOnInit(): void {}
   slides: any[] = [
     {
       title: `Qui sommes-nous ?`,
