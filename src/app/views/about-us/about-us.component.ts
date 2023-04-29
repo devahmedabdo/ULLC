@@ -18,6 +18,7 @@ export class AboutUsComponent implements OnInit, AfterViewInit {
         el: '.swiper-pagination',
         type: 'bullets',
       },
+      spaceBetween: 24,
       autoplay: true,
     });
   }

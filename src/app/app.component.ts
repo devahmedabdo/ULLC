@@ -6,8 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'ullc';
+  title = 'ULLC';
+  activeMenu: boolean = false;
+  setActiveMenu(data: any) {
+    this.activeMenu = data;
+  }
   toTop() {
     window.scrollTo(0, 0);
+    this.activeMenu = false;
   }
 }

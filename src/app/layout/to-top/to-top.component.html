@@ -1,2 +1,2 @@
-<img [ngClass]="{'translate-y-16 opacity-0':hide || lastScroll < 800}"
+<img (click)="toTop()" [ngClass]="{'translate-y-16 opacity-0':hide || lastScroll < 800}"
   class="fixed bottom-5 right-5 w-10  md:w-14 duration-300" src="../../../assets/main/arrowcircleup.svg" alt="">

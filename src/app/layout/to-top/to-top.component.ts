@@ -3,12 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-to-top',
   templateUrl: './to-top.component.html',
-  styleUrls: ['./to-top.component.scss']
+  styleUrls: ['./to-top.component.scss'],
 })
 export class ToTopComponent implements OnInit {
-
-  constructor() { }
-
+  constructor() {}
+  toTop() {
+    window.scrollTo(0, 0);
+  }
   hide: boolean = false;
   lastScroll: number = 0;
   ngOnInit(): void {
@@ -22,5 +23,4 @@ export class ToTopComponent implements OnInit {
       this.lastScroll = window.scrollY;
     });
   }
-
 }
