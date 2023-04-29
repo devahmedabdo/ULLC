@@ -24,7 +24,7 @@
 .goals {
   --swiper-scrollbar-bg-color: #ff3b3b;
   --swiper-scrollbar-size: 3px;
-  --swiper-scrollbar-drag-bg-color: #3badff;
+  --swiper-scrollbar-drag-bg-color: #232424;
 }
 ::ng-deep {
   .swiper-horizontal > .swiper-scrollbar,
@@ -37,6 +37,14 @@
   }
 }
 .faqs {
+  background: right center / 380px url("../../../assets/main/bg-2.svg")
+    no-repeat;
+  @media (min-width: 768px) {
+    background: right center / 380px url("../../../assets/main/bg-2.svg")
+      no-repeat;
+  }
+}
+.goals {
   background: right center / 380px url("../../../assets/main/bg-2.svg")
     no-repeat;
   @media (min-width: 768px) {

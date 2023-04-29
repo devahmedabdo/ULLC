@@ -114,7 +114,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {}
   ngAfterViewInit(): void {
     new Swiper('.goals-swiper', {
-      slidesPerView: 1,
+      slidesPerView: 'auto',
+      spaceBetween: 22,
 
       // loop: true,
       // freeMode: {
