@@ -76,7 +76,8 @@
     </div>
   </div>
   <div class="md:w-1/2 w-full relative overflow-hidden">
-    <swiper-container scrollbar="{ draggable: true, el:'.swiper-scrollbar '}"
+    <swiper-container slides-per-view="auto" space-between="10" scrollbar-draggable="true" scroll-dragSize="100"
+      scrollbar-dragClass=".scroll-drag" scrollbar-el=".swiper-scrollbar"
       class="pb-10 goals-swiper w-full overflow-visible">
       <swiper-slide *ngFor="let goal of goals" class="w-fit">
         <div
@@ -88,11 +89,11 @@
       </swiper-slide>
     </swiper-container>
     <div class="swiper-scrollbar hidden md:block z-10">
-      <div class="scroll-drag bg-primary "></div>
+
     </div>
   </div>
 </div>
-<!-- <div class=" md:px-20 px-5">
+<div class=" md:px-20 px-5">
   <h2 class="title">
     Quelques merveilleuses personnes que
     nous sommes fiers d'appeler clients :
@@ -123,7 +124,7 @@
         allowfullscreen></iframe>
     </div>
   </div>
-</div> -->
+</div>
 <div class=" md:px-20 px-5 faqs">
   <h2 class="title">
     FAQ

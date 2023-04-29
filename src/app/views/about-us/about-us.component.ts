@@ -9,18 +9,18 @@ import Swiper from 'swiper';
 export class AboutUsComponent implements OnInit, AfterViewInit {
   constructor() {}
   ngAfterViewInit(): void {
-    new Swiper('.aboutUs', {
-      hashNavigation: {
-        watchState: true,
-      },
-      pagination: {
-        clickable: true,
-        el: '.swiper-pagination',
-        type: 'bullets',
-      },
-      spaceBetween: 24,
-      autoplay: true,
-    });
+    //   new Swiper('.aboutUs', {
+    //     hashNavigation: {
+    //       watchState: true,
+    //     },
+    //     pagination: {
+    //       clickable: true,
+    //       el: '.swiper-pagination',
+    //       type: 'bullets',
+    //     },
+    //     spaceBetween: 24,
+    //     autoplay: true,
+    //   });
   }
   ngOnInit(): void {}
   slides: any[] = [

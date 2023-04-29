@@ -113,37 +113,35 @@ export class HomeComponent implements OnInit {
   ];
   ngOnInit(): void {}
   ngAfterViewInit(): void {
-    new Swiper('.goals-swiper', {
-      slidesPerView: 'auto',
-      spaceBetween: 22,
-
-      // loop: true,
-      // freeMode: {
-      //   enabled: true,
-      //   sticky: true,
-      // },
-      // slidesPerView: 'auto',
-      scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-        dragSize: 100,
-        dragClass: 'scroll-drag',
-        enabled: true,
-      },
-      // spaceBetween: 0,
-      breakpoints: {
-        1320: {
-          slidesPerView: 2,
-          spaceBetween: 22,
-        },
-      },
-
-      // grid: {
-      //   rows: 3,
-      // },
-      // mousewheel: {
-      //   forceToAxis: true,
-      // },
-    });
+    // new Swiper('.goals-swiper', {
+    //   slidesPerView: 'auto',
+    //   spaceBetween: 11,
+    //   // loop: true,
+    //   // freeMode: {
+    //   //   enabled: true,
+    //   //   sticky: true,
+    //   // },
+    //   // slidesPerView: 'auto',
+    //   scrollbar: {
+    //     // el: '.swiper-scrollbar',
+    //     // draggable: true,
+    //     // dragSize: 100,
+    //     // dragClass: 'scroll-drag',
+    //     enabled: false,
+    //   },
+    //   breakpoints: {
+    //     1320: {
+    //       scrollbar: {
+    //         enabled: true,
+    //       },
+    //     },
+    //   },
+    //   // grid: {
+    //   //   rows: 3,
+    //   // },
+    //   // mousewheel: {
+    //   //   forceToAxis: true,
+    //   // },
+    // });
   }
 }

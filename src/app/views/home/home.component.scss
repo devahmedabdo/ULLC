@@ -23,15 +23,15 @@
 }
 .goals {
   --swiper-scrollbar-bg-color: #ff3b3b;
-  --swiper-scrollbar-size: 3px;
-  --swiper-scrollbar-drag-bg-color: #232424;
+  --swiper-scrollbar-size: 8px;
+  --swiper-scrollbar-drag-bg-color: #ff3b3b;
 }
 ::ng-deep {
   .swiper-horizontal > .swiper-scrollbar,
   .swiper-scrollbar.swiper-scrollbar-horizontal {
     > div {
       height: 200%;
-      top: -2px;
+      top: -4px;
       position: relative;
     }
   }
