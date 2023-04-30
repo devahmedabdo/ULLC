@@ -34,8 +34,14 @@
   }
 }
 nav {
-  background: center right / cover url(../../../assets/main/nav-bg.svg)
-    no-repeat;
+  background: center right / 300px url(../../../assets/main/nav-bg.svg)
+      no-repeat,
+    #1d1d1d;
+  @media (min-width: 768px) {
+    background: center right / cover url(../../../assets/main/nav-bg.svg)
+        no-repeat,
+      #1d1d1d;
+  }
   &.active {
     @apply -translate-x-0;
   }
