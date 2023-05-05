@@ -7,8 +7,10 @@
     </div>
     <div
       class="md:w-1/2 min-w-[300px] text-center md:text-left items-center  flex flex-col {{i % 2 !== 0 ? 'md:items-start':'md:items-end'}}">
-      <h3 class="font-bold text-xl  md:text-[27px] uppercase">{{service.title}}</h3>
-      <p class="pt-8 md:pt-14 text-sm font-medium md:text-xl ">{{service.des}}</p>
+      <h3 class="font-bold text-xl  md:text-[27px] uppercase" [translate]="'name'"
+        [translateParams]="{name_fr:service.title,name_en:service.titleEn}"></h3>
+      <p class="pt-8 md:pt-14 text-sm font-medium md:text-xl " [translate]="'name'"
+        [translateParams]="{name_fr:service.des,name_en:service.desEn}"></p>
     </div>
   </div>
 </div>

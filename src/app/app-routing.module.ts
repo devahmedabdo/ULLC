@@ -10,6 +10,8 @@ const services = {
     votre concurrence !`,
       des: `Découvrez notre offre de publicité digitale et rejoignez l'avenir de la communication en ligne. Nous sommes des experts en Social Ads et nous pouvons vous aider à augmenter votre visibilité en ligne et à booster vos ventes grâce à notre approche unique qui combine des créations  performantes et des méthodes de media buying avancées. Ne manquez pas cette opportunité de faire croître votre entreprise - contactez-nous dès maintenant pour en 
     savoir plus.`,
+      titleEn: `Reach excellence and surpass your competition!`,
+      desEn: `Discover our digital advertising offer and join the future of online communication. We are experts in Social Ads and can help you increase your online visibility and boost your sales through our unique approach that combines high-performing creatives and advanced media buying methods. Don't miss this opportunity to grow your business - contact us now to learn more.`,
       img: `../../../assets/services/service-img-1.svg`,
     },
     {
@@ -26,6 +28,16 @@ const services = {
     mots-clés pertinents pour votre entreprise, et nous sommes confiants 
     dans notre capacité à vous aider à générer des leads de qualité et à 
     acquérir de nouveaux clients.`,
+      titleEn: `Reach a massive audience of over 2.8 billion 
+      users with our unique approach.`,
+      desEn: `At You Will See, we are experts in digital advertising and understand 
+      that Facebook Ads is a powerful tool to reach a massive audience 
+      of over 2.8 billion monthly users. With our unique approach combining 
+      high-performing creatives and advanced media buying methods, we 
+      can help you reach new potential customers and grow your online 
+      sales. We use highly advanced tools to track and recycle relevant 
+      keywords for your business, and we are confident in our ability to 
+      help you generate quality leads and acquire new customers.`,
       img: `../../../assets/services/Facebook.svg`,
     },
     {
@@ -44,6 +56,11 @@ const services = {
     dès maintenant et nous sommes là pour vous montrer 
     comment. Alors n'attendez plus, laissez-nous vous aider 
     à réussir avec Facebook Ads.`,
+      titleEn: `Let us help you succeed with Facebook 
+      Ads and maximize your results 
+      through our best practices and 
+      dedicated team.`,
+      desEn: `Contact us at You Will See now to discover how our Facebook Ads offering can take your online business to new heights. We are here to help you maximize your results, using the best practices and most advanced tools to achieve your digital advertising goals on Facebook. With our expertise in digital advertising, you can join the future of digital advertising today and we are here to show you how. So don't wait any longer, let us help you succeed with Facebook Ads.`,
       img: `../../../assets/services/facebook-service.svg`,
     },
   ],
@@ -54,6 +71,8 @@ const services = {
       des: `Découvrez notre offre de publicité digitale et rejoignez l'avenir de la communication en ligne. Nous sommes des experts en Social Ads et nous pouvons vous aider à augmenter votre visibilité en ligne et à booster vos ventes grâce à notre approche unique qui combine des créations  performantes et des méthodes de media buying avancées. Ne manquez pas cette opportunité de faire croître votre entreprise - contactez-nous dès maintenant pour en 
       savoir plus.`,
       img: `../../../assets/services/service-img-1.svg`,
+      titleEn: `Reach excellence and surpass your competition!`,
+      desEn: `Discover our digital advertising offer and join the future of online communication. We are experts in Social Ads and can help you increase your online visibility and boost your sales through our unique approach that combines high-performing creatives and advanced media buying methods. Don't miss this opportunity to grow your business - contact us now to learn more.`,
     },
     {
       title: `Augmentez votre visibilité et boostez vos 
@@ -66,6 +85,8 @@ const services = {
       manquez pas cette opportunité de faire croître votre entreprise grâce à 
       nos campagnes de publicité en ligne ciblées.`,
       img: `../../../assets/services/Instagram.svg`,
+      titleEn: `Increase your visibility and boost your sales with our Instagram Ads offer.`,
+      desEn: `At our company, our Instagram Ads offering combines high-performing creatives with advanced media buying methods to increase your online visibility and boost your sales. More than half of in-store purchases are influenced by online advertising, so don't miss out on this opportunity to grow your business through our targeted online advertising campaigns.`,
     },
     {
       title: ` Générez des leads de qualité et acquérez 
@@ -80,6 +101,8 @@ const services = {
       découvrir comment notre offre Instagram Ads peut aider à faire 
       décoller votre entreprise en ligne.`,
       img: `../../../assets/services/instagram-service.svg`,
+      titleEn: `Generate quality leads and acquire new clients with our expertise in Instagram Ads digital advertising.`,
+      desEn: `We are experts in digital advertising and we are confident in our ability to help you generate high-quality leads and acquire new customers through our unique approach. With more than 81% of French people regularly buying online, it's time to join the future of digital advertising now. Contact our agency to discover how our Instagram Ads offering can help skyrocket your online business.`,
     },
   ],
   youtube: [
@@ -89,6 +112,8 @@ const services = {
       des: `Découvrez notre offre de publicité digitale et rejoignez l'avenir de la communication en ligne. Nous sommes des experts en Social Ads et nous pouvons vous aider à augmenter votre visibilité en ligne et à booster vos ventes grâce à notre approche unique qui combine des créations  performantes et des méthodes de media buying avancées. Ne manquez pas cette opportunité de faire croître votre entreprise - contactez-nous dès maintenant pour en 
       savoir plus.`,
       img: `../../../assets/services/service-img-1.svg`,
+      titleEn: `Reach excellence and surpass your competition!`,
+      desEn: `Discover our digital advertising offer and join the future of online communication. We are experts in Social Ads and can help you increase your online visibility and boost your sales through our unique approach that combines high-performing creatives and advanced media buying methods. Don't miss this opportunity to grow your business - contact us now to learn more.`,
     },
     {
       title: `Notre expertise en publicité digitale 
@@ -96,6 +121,8 @@ const services = {
       publicitaires performantes sur YouTube. `,
       des: `Nous sommes une agence de publicité numérique spécialisée dans la publicité sur YouTube. Chez You Will See, nous disposons d'une équipe d'experts en publicité digitale qui travaille en collaboration avec des experts de l'industrie pour proposer des stratégies publicitaires personnalisées et performantes sur YouTube Ads. Nous nous engageons à maximiser les résultats de nos clients en matière de publicité sur YouTube.`,
       img: `../../../assets/services/YouTube.svg`,
+      titleEn: `Our expertise in digital advertising at your service for high-performing advertising campaigns on YouTube.`,
+      desEn: `We are a digital advertising agency specialized in advertising on YouTube. At You Will See, we have a team of digital advertising experts who work in collaboration with industry experts to provide customized and high-performing advertising strategies on YouTube Ads. We are committed to maximizing our clients' results in advertising on YouTube.`,
     },
     {
       title: `Des stratégies publicitaires 
@@ -108,6 +135,8 @@ const services = {
       l'industrie pour offrir à nos clients des campagnes publicitaires toujours plus performantes et efficaces sur YouTube. Chez You Will See, notre priorité est la réussite de nos clients grâce à une expertise en publicité digitale de qualité.
       `,
       img: `../../../assets/services/youtube-service.svg`,
+      titleEn: `Customized advertising strategies to maximize your success on YouTube Ads`,
+      desEn: `By working with us, our clients benefit from a dedicated team committed to their success and always ready to help them achieve their advertising goals on YouTube. We stay at the forefront of the latest industry trends to offer our clients increasingly effective and efficient advertising campaigns on YouTube. At You Will See, our priority is the success of our clients through quality digital advertising expertise.`,
     },
   ],
   google: [
@@ -117,6 +146,8 @@ const services = {
       des: `Découvrez notre offre de publicité digitale et rejoignez l'avenir de la communication en ligne. Nous sommes des experts en Social Ads et nous pouvons vous aider à augmenter votre visibilité en ligne et à booster vos ventes grâce à notre approche unique qui combine des créations  performantes et des méthodes de media buying avancées. Ne manquez pas cette opportunité de faire croître votre entreprise - contactez-nous dès maintenant pour en 
       savoir plus.`,
       img: `../../../assets/services/service-img-1.svg`,
+      titleEn: `Reach excellence and surpass your competition!`,
+      desEn: `Discover our digital advertising offer and join the future of online communication. We are experts in Social Ads and can help you increase your online visibility and boost your sales through our unique approach that combines high-performing creatives and advanced media buying methods. Don't miss this opportunity to grow your business - contact us now to learn more.`,
     },
     {
       title: `Des annonces personnalisées et précises avec 
@@ -130,6 +161,8 @@ const services = {
       performances de leurs campagnes publicitaires en temps réel pour 
       ajuster les enchères et les mots-clés afin d'optimiser les résultats.`,
       img: `../../../assets/services/Google.svg`,
+      titleEn: `Customized and precise ads with Google Ads - You Will See, your digital advertising partner.`,
+      desEn: `At You Will See, we are experts in digital advertising and use Google Ads to help our clients reach their target audience with precision. We create customized ads based on their marketing objectives, using different formats such as text ads, display ads, and video ads. With our team of experts, we can track and analyze the performance of their advertising campaigns in real-time to adjust bids and keywords to optimize results.`,
     },
     {
       title: `Maximisez votre budget publicitaire avec 
@@ -144,6 +177,8 @@ const services = {
       notre expertise pour obtenir des résultats optimaux et rentables 
       pour votre entreprise.`,
       img: `../../../assets/services/google-service.svg`,
+      titleEn: `Maximize your advertising budget with You Will See and achieve optimal results on Google Ads.`,
+      desEn: `By working with us, you benefit from personalized support to find the most effective bids for your business while maximizing your advertising budget. We are here to help you increase your online visibility, reach new potential customers, and achieve your digital advertising goals on Google. Trust our expertise to achieve optimal and cost-effective results for your business.`,
     },
   ],
 };

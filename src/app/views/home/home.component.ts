@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
     toucher une audience précise 
     avec des options de ciblage 
     avancées.`,
-      img: `../../../assets/services/Facebook.svg`,
+      img: `assets/services/Facebook.svg`,
     },
     {
       link: 'instgramservices',
@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
       toucher une audience 
       qualifiée avec des formats 
       publicitaires créatifs et visuels.`,
-      img: `../../../assets/services/Instagram.svg`,
+      img: `assets/services/Instagram.svg`,
     },
     {
       link: 'youtubeservices',
@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
       portée et des options de 
       ciblage avancées pour toucher 
       une audience qualifiée.`,
-      img: `../../../assets/services/YouTube.svg`,
+      img: `assets/services/YouTube.svg`,
     },
     {
       link: 'googleservices',
@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
       visibilité immédiate sur le 
       moteur de recherche 
       le plus utilisé au monde.`,
-      img: `../../../assets/services/Google.svg`,
+      img: `assets/services/Google.svg`,
     },
   ];
   goals: any[] = [
@@ -77,7 +77,7 @@ export class HomeComponent implements OnInit {
       img: `Rapport.svg`,
     },
     {
-      name: `Objectif `,
+      name: `Objectif`,
       des: `Nous avons un objectif clair 
       en tête : aider nos clients à 
       atteindre leur succès.`,
@@ -85,7 +85,7 @@ export class HomeComponent implements OnInit {
     },
     {
       name: `Créatif`,
-      des: ` Nous sommes une agence de 
+      des: `Nous sommes une agence de 
       marketing créative qui pense 
       en dehors des sentiers battus 
       pour des résultats 
@@ -109,39 +109,11 @@ export class HomeComponent implements OnInit {
       molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla 
       accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. 
       Maecenas eget condimentum velit, sit amet feugiat lectus.orquen`,
+      questionEn: `What is your process for creating an effective advertising campaign on 
+      Instagram, Facebook, YouTube or Google?`,
+      solutionEn: ``,
     },
   ];
+  placeholder: string = `N'hésite pas à nous poser plus de questions ici :)`;
   ngOnInit(): void {}
-  ngAfterViewInit(): void {
-    // new Swiper('.goals-swiper', {
-    //   slidesPerView: 'auto',
-    //   spaceBetween: 11,
-    //   // loop: true,
-    //   // freeMode: {
-    //   //   enabled: true,
-    //   //   sticky: true,
-    //   // },
-    //   // slidesPerView: 'auto',
-    //   scrollbar: {
-    //     // el: '.swiper-scrollbar',
-    //     // draggable: true,
-    //     // dragSize: 100,
-    //     // dragClass: 'scroll-drag',
-    //     enabled: false,
-    //   },
-    //   breakpoints: {
-    //     1320: {
-    //       scrollbar: {
-    //         enabled: true,
-    //       },
-    //     },
-    //   },
-    //   // grid: {
-    //   //   rows: 3,
-    //   // },
-    //   // mousewheel: {
-    //   //   forceToAxis: true,
-    //   // },
-    // });
-  }
 }

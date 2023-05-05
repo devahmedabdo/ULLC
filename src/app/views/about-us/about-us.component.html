@@ -8,9 +8,18 @@
             <img src="{{slide.img}}" alt="">
           </div>
           <div class="flex flex-col gap-5 w-1/2 min-w-[350px] text-center md:text-left">
-            <h2 class="text-3xl md:text-5xl font-bold">{{slide.title}}</h2>
-            <p class="">{{slide.des1}}</p>
-            <p class="">{{slide.des2}}</p>
+            <h2 class="text-3xl md:text-5xl font-bold" [translate]="'name'" [translateParams]="{
+              name_en: slide.titleEn,
+              name_fr: slide.title
+            }"></h2>
+            <p [translate]="'name'" [translateParams]="{
+              name_en: slide.des1En,
+              name_fr: slide.des1
+            }"> </p>
+            <p [translate]="'name'" [translateParams]="{
+              name_en: '',
+              name_fr: slide.des2
+            }"> </p>
           </div>
         </div>
       </swiper-slide>
@@ -19,25 +28,23 @@
   </div>
   <div>
     <h2 class="title">
-      Notre équipe
+      {{"Notre équipe"|translate}}
     </h2>
     <div class="flex flex-wrap justify-center gap-8">
       <div class="flex flex-col items-center text-center rounded-3xl shadow-lg bg-white px-14 py-6 gap-5">
         <img src="assets/team/main-user-1.png" alt="">
-        <span class="text-xl font-medium">Akram : Fondateur
-          et ceo</span>
+        <span class="text-xl font-medium">{{"Akram : Fondateur et ceo"|translate}}</span>
       </div>
-      <div class="flex flex-col items-center text-center rounded-3xl shadow-lg bg-white px-14 py-6 gap-5">
+      <div class="flex flex-col items-center text-center rounded-3xl shadow-lg bg-white px-14 py-6 gap-5 max-w-sm">
         <img src="assets/team/main-user-2.png" alt="">
-        <span class="text-xl font-medium">Akram : Fondateur
-          et ceo</span>
+        <span class="text-xl font-medium">{{"Doussa : Co-fondatrice et rédactrice publicitaire"|translate}}</span>
       </div>
     </div>
     <div class="flex flex-wrap justify-center gap-8 mt-10">
       <div *ngFor="let user of users ;let i =index"
         class="flex max-w-[250px] flex-col items-center text-center rounded-3xl shadow-lg bg-white px-2 py-6 gap-5">
         <img src="assets/team/user-{{i+1}}.png" alt="">
-        <span class="text-xl font-medium">{{user}}</span>
+        <span class="text-xl font-medium">{{user |translate}}</span>
       </div>
     </div>
   </div>

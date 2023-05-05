@@ -11,18 +11,18 @@
   </a>
   <nav [ngClass]="{active:activeMenu}"
     class="duration-300 text-3xl gap-10 z-10 ease-in flex flex-col bg-zinc-800   text-white fixed top-0 left-0 w-full max-w-4xl h-full pt-40 pl-10 md:pl-32 -translate-x-full">
-    <a routerLink="/">L’agence</a>
-    <a routerLink="/aboutus">À propos de nous</a>
-    <a href="#services">Sévices</a>
+    <a routerLink="/">{{"L’agence"|translate}}</a>
+    <a routerLink="/aboutus">{{"À propos de nous"|translate}}</a>
+    <a href="#services">{{"Sévices"|translate}}</a>
     <div class="flex gap-5 mt-10">
-      <img class="w-11" src="assets/main/usa.svg" alt="">
-      <img class="w-11" src="assets/main/fr.svg" alt="">
+      <img class="w-11" (click)="setLang('en')" src="assets/main/usa.svg" alt="">
+      <img class="w-11" (click)="setLang('fr')" src="assets/main/fr.svg" alt="">
     </div>
   </nav>
 
   <div class="hidden md:block">
     <a href="" class="vertical rotate-180 block mx-auto text-xl pt-5">
-      Rejoindre l’aventure
+      {{"Rejoindre l’aventure"|translate}}
     </a>
   </div>
   <div class="md:hidden">
