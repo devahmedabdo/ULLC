@@ -10,6 +10,30 @@ export class AppComponent {
   constructor(private translate: TranslateService) {
     let lang = localStorage.getItem('lang');
     this.setLang(lang || 'fr');
+    window.addEventListener('scroll', () => {
+      let animationClasses = document.querySelectorAll(
+        '.lReveal , .dReveal,.uReveal,.rReveal'
+      );
+      animationClasses.forEach((e) => {
+        if (e.getBoundingClientRect().top < 600) {
+          e.classList.add('reveal');
+        } else {
+          e.classList.remove('reveal');
+        }
+      });
+    });
+    window.addEventListener('load', () => {
+      let animationClasses = document.querySelectorAll(
+        '.lReveal , .dReveal,.uReveal,.rReveal'
+      );
+      animationClasses.forEach((e) => {
+        if (e.getBoundingClientRect().top < 600) {
+          e.classList.add('reveal');
+        } else {
+          e.classList.remove('reveal');
+        }
+      });
+    });
   }
   setLang = async (lang: any) => {
     this.lang = lang;
@@ -27,5 +51,15 @@ export class AppComponent {
   toTop() {
     window.scrollTo(0, 0);
     this.activeMenu = false;
+    let animationClasses = document.querySelectorAll(
+      '.lReveal , .dReveal,.uReveal,.rReveal'
+    );
+    animationClasses.forEach((e) => {
+      if (e.getBoundingClientRect().top < 600) {
+        e.classList.add('reveal');
+      } else {
+        e.classList.remove('reveal');
+      }
+    });
   }
 }

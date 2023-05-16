@@ -10,16 +10,16 @@
       </swiper-slide>
     </swiper-container>
 
-    <span class="font-semibold text-sm md:text-[22px] text-gray mt-20">
+    <span class="font-semibold text-sm md:text-[22px] text-gray mt-20 dReveal max-w-[230px] md:max-w-5xl">
       {{"Création de contenu, publicité, conversion de prospects..."|translate}}</span>
-    <h2 class="font-bold text-2xl md:text-7xl  ">
-      {{"Ça commence toujours avec un"|translate}} <span class="underline-img"><img src="assets/main/underline.svg"
-          alt="">{{" BON "|translate}}</span>
+    <h2 class="font-bold text-2xl md:text-7xl dReveal ">
+      {{"Ça commence toujours avec un"|translate}} <br class="md:hidden"> <span class="underline-img"><img
+          src="assets/main/underline.svg" alt="">{{" BON "|translate}}</span>
       {{"Accompagnement."|translate}}
     </h2>
-    <a href="" class="font-semibold text-lg md:text-3xl border-b-4 border-primary">
+    <a href="" class="font-semibold text-lg md:text-3xl border-b-4 border-primary dReveal">
       {{"Rejoindre l'aventure"|translate}}</a>
-    <a href="#services" class="md:w-10 w-6">
+    <a href="#services" class="md:w-10 w-6 dReveal">
       <img src="assets/main/down-arrow.svg" alt="">
     </a>
 
@@ -27,9 +27,9 @@
   </div>
 </div>
 <div class="md:px-20 px-5  about-us p-20">
-  <div class="border md:p-12   py-8 relative">
+  <div class="border md:p-12   py-8 relative flex flex-col items-center">
     <img class="absolute top-0 -translate-y-1/2 w-10 left-11" src="assets/main/vector.svg" alt="">
-    <h2 class="font-bold text-lg md:text-4xl text-center leading-6 md:leading-normal">
+    <h2 class="font-bold text-lg md:text-4xl text-center leading-6 md:leading-normal dReveal">
       {{"ATTEIGNEZ L'EXCELLENCE ET"|translate}} <span class="underline-img"> <img src="assets/main/underline2.svg"
           alt="">
         {{"SURPASSEZ"|translate}}</span>
@@ -37,16 +37,16 @@
       {{"VOTRE CONCURRENCE grâce à notre expertise et notre engagement sans faille pour vos projets."|translate}}
     </h2>
     <a href="#"
-      class="bg-primary min-w-max text-white text-xs md:text-lg p-4 font-semibold md:p-8 mx-auto rounded-full block w-fit mt-10">
+      class="bg-primary hover:shadow-xl hover:scale-105 duration-300 dReveal text-white text-xs md:text-lg p-4 font-semibold md:p-8  rounded-full  mt-10">
       {{"Rejoindre l'aventure"|translate}}</a>
   </div>
 </div>
 <div id="services" class="md:px-20 px-5 services p-20">
-  <h2 class="title">{{"Voici ce que nous faisons :"|translate}}</h2>
+  <h2 class="title dReveal">{{"Voici ce que nous faisons :"|translate}}</h2>
   <div class="flex flex-wrap gap-3 gap-y-10 justify-center">
     <div *ngFor="let service of services"
-      class="flex justify-between px-5 flex-col gap-5 w-1/4 min-w-[240px] pb-8 service-box bg-white p-1 pt-3 rounded-3xl ">
-      <div class="flex justify-center items-center p-8" style="--color: {{service.color}}">
+      class="flex dReveal justify-between px-5 flex-col gap-5 w-1/4 min-w-[240px] pb-8 service-box bg-white p-1 pt-3 rounded-3xl ">
+      <div class="flex justify-center items-center p-8 " style="--color: {{service.color}}">
         <img class="w-3/5" src="{{service.img}}" alt="">
       </div>
       <h3 class="font-semibold text-2xl md:text-3xl ">{{service.title}}</h3>
@@ -63,12 +63,12 @@
   <div class="md:w-1/2 text-lg text-center md:text-left md:text-2xl font-semibold relative">
     <img class="  left-0  rotate-45 md:rotate-0 absolute top-full translate-y-10 w-28 md:left-1/2"
       src="assets/main/br-arrow.svg" alt="">
-    <p class="px-10 md:px-0">
+    <p class="px-10 md:px-0 dReveal">
       {{"Le vrai marketing va au-delà du copier-coller des mêmes stratégies pour tous nos clients. Ce qui a fonctionné
       pour un magasin peut"|translate}}
       <span class="text-primary">{{" NE PAS "|translate}}</span>{{"fonctionner pour un autre"|translate}}
     </p>
-    <div class="flex pr-3 gap-3 relative px-10 md:px-0">
+    <div class="flex pr-3 gap-3 relative px-10 md:px-0 dReveal">
       <p class="mt-10">{{"c'est pourquoi nous adaptons soigneusement notre approche à ce que nous pensons qui vous
         procurera les meilleurs résultats."|translate}} </p>
       <img class="absolute w-10 left-0 top-0 md:relative" src="assets/main/info.svg" alt="">
@@ -93,60 +93,60 @@
   </div>
 </div>
 <div class=" md:px-20 px-5">
-  <h2 class="title  md:text-5xl mx-auto md:leading-[65px]">
+  <h2 class="title dReveal md:text-5xl mx-auto md:leading-[65px]">
     {{"Quelques merveilleuses personnes que nous sommes fiers d'appeler clients :"|translate}}
   </h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div class="rounded-3xl overflow-hidden">
+    <!-- <div class="rounded-3xl overflow-hidden dReveal">
       <iframe class="w-full" src="https://www.youtube.com/embed/eCWjX8Z9QrY" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     </div>
-    <div class="rounded-3xl overflow-hidden">
+    <div class="rounded-3xl overflow-hidden dReveal">
       <iframe class="w-full" src="https://www.youtube.com/embed/eCWjX8Z9QrY" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     </div>
-    <div class="rounded-3xl overflow-hidden">
+    <div class="rounded-3xl overflow-hidden dReveal">
       <iframe class="w-full" src="https://www.youtube.com/embed/eCWjX8Z9QrY" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     </div>
-    <div class="rounded-3xl overflow-hidden">
+    <div class="rounded-3xl overflow-hidden dReveal">
       <iframe class="w-full" src="https://www.youtube.com/embed/eCWjX8Z9QrY" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
     </div>
+  </div> -->
   </div>
-</div>
-<div class=" md:px-20 px-5 faqs">
-  <h2 class="title">
-    FAQ
-  </h2>
-  <div>
-    <div *ngFor="let ques of faqs;let i =index" (click)="ques.show ? ques.show = false:ques.show = true"
-      class="bg-white flex flex-col gap-5 p-5 rounded-3xl border">
-      <div class="flex justify-between gap-8">
-        <span class="font-bold text-3xl md:text-5xl text-primary block min-w-[80px] text-center">0{{i+1}}</span>
-        <span class="text-sm md:text-2xl" [translate]="'name'"
-          [translateParams]="{name_fr:ques.question,name_en:ques.questionEn}"></span>
+  <!-- <div class=" md:px-20 px-5 faqs">
+    <h2 class="title">
+      FAQ
+    </h2>
+    <div>
+      <div *ngFor="let ques of faqs;let i =index" (click)="ques.show ? ques.show = false:ques.show = true"
+        class="bg-white flex flex-col gap-5 p-5 rounded-3xl border">
+        <div class="flex justify-between gap-8">
+          <span class="font-bold text-3xl md:text-5xl text-primary block min-w-[80px] text-center">0{{i+1}}</span>
+          <span class="text-sm md:text-2xl" [translate]="'name'"
+            [translateParams]="{name_fr:ques.question,name_en:ques.questionEn}"></span>
+        </div>
+        <div *ngIf="ques.show" class="flex justify-between gap-8">
+          <span class="font-bold text-3xl md:text-5xl text-primary block min-w-[80px] text-center">-</span>
+          <span class="text-sm md:text-2xl" [translate]="'name'"
+            [translateParams]="{name_fr:ques.solution,name_en:ques.solutionEn}"></span>
+        </div>
       </div>
-      <div *ngIf="ques.show" class="flex justify-between gap-8">
-        <span class="font-bold text-3xl md:text-5xl text-primary block min-w-[80px] text-center">-</span>
-        <span class="text-sm md:text-2xl" [translate]="'name'"
-          [translateParams]="{name_fr:ques.solution,name_en:ques.solutionEn}"></span>
-      </div>
+      <form action="" class="w-full mt-6 rounded-3xl bg-white flex justify-between overflow-hidden border text-center">
+        <input class="focus:outline-0 w-full py-4 px-10 placeholder:text-center placeholder:text-black"
+          placeholder="{{placeholder|translate}}" type="text">
+        <button type="submit" class="bg-primary w-28 flex items-center justify-center">
+          <img class="rotate-90 invert w-8 " src="assets/main/arrowcircleup.svg" alt="">
+        </button>
+      </form>
     </div>
-    <form action="" class="w-full mt-6 rounded-3xl bg-white flex justify-between overflow-hidden border text-center">
-      <input class="focus:outline-0 w-full py-4 px-10 placeholder:text-center placeholder:text-black"
-        placeholder="{{placeholder|translate}}" type="text">
-      <button type="submit" class="bg-primary w-28 flex items-center justify-center">
-        <img class="rotate-90 invert w-8 " src="assets/main/arrowcircleup.svg" alt="">
-      </button>
-    </form>
-  </div>
-</div>
+  </div> -->

@@ -1,5 +1,4 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
-import Swiper from 'swiper';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about-us',
