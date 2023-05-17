@@ -17,7 +17,11 @@
 }
 .about-us {
   > div {
-    background: top center / contain url("../../../assets/main/aboutus-bg.svg")
+    @media (min-width: 768px) {
+      background: bottom center / contain
+        url("../../../assets/main/aboutus-bg.svg") no-repeat;
+    }
+    background: bottom center / 320px url("../../../assets/main/bg-1-2.svg")
       no-repeat;
   }
 }
@@ -50,5 +54,11 @@
   @media (min-width: 768px) {
     background: right center / 380px url("../../../assets/main/bg-2.svg")
       no-repeat;
+  }
+}
+.butn {
+  &::after {
+    content: "";
+    @apply -z-10 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 duration-300 rounded-full  w-full h-full bg-primary hover:scale-110;
   }
 }
