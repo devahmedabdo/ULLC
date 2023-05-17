@@ -64,3 +64,15 @@ $animTime: 0.5s;
   transform: translateX(0px) translateY(0px) !important;
   opacity: 1 !important;
 }
+.lin-btn {
+  @apply relative;
+  &::after {
+    content: "";
+    @apply left-0 top-full absolute w-full h-0.5 bg-primary scale-0 duration-500 hover:scale-100 origin-left;
+  }
+  &.vertical {
+    &::after {
+      @apply top-0  w-0.5 h-full origin-top hover:scale-100;
+    }
+  }
+}
